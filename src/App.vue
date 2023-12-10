@@ -1,34 +1,21 @@
 <template>
-  <FormularioAvaliativo/>
+  <div id="app">
+    <FormularioAvaliativo />
+  </div>
 </template>
 
 <script>
-  import FormularioAvaliativo from './components/form.vue'
+import FormularioAvaliativo from "./components/FormularioAvaliativo.vue";
 
-  export default{
-    name: 'App',
-
-    components: {
-      FormularioAvaliativo
-    }
-  }
-
+export default {
+  components: {
+    FormularioAvaliativo
+},
+};
 </script>
 
 <style>
-  *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  body{
-    height: 100vh;
-    width: 100%;
+  html{
     background-color: #ebebeb;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 </style>
